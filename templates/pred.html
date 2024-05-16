@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Tech</title>
+    <link rel="stylesheet" type="text/css" href="\static\predict.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/static/OIP.jpeg" alt="MR Tech" class="logo">
+        <h2 class="container-heading"><span class="heading_font">MR Tech</span></h2>
+        <div class="Description">
+            <p>Disease Prediction</p>
+        </div>
+    </div>
+    <div class="results">
+        {% if prediction == 1 %}
+        <h1>Prediction: <span class="Healthy">You Don't have any Diseases</span></h1>
+        {% elif prediction == 2 %}
+        <h1>Prediction: <span class="Diabetes">You Are Affected by Diabetes</span></h1>
+        {% elif prediction == 3 %}
+        <h1>Prediction: <span class="Anemia">You Are Affected by Anemia</span></h1>
+        {% elif prediction == 4 %}
+        <h1>Prediction: <span class="Thalasse">You Are Affected by Thalasse</span></h1>
+        {% elif prediction == 5 %}
+        <h1>Prediction: <span class="Thromboc">You Are Affected by Thromboc</span></h1>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Tech</title>
+    <link rel="stylesheet" href="/static/first.css"> 
+</head>
+<body>
+    <div class="container">
+        <img src="/static/OIP.jpeg" alt="MR Tech" class="logo">
+        <h2>MR Tech</h2>
+        <h1>Disease Prediction</h1>
+        <h2>You Can Enter the values in float</h2>
+    </div>
+    <form action="/predict" method="post">
+            <label for="Glucose">Glucose</label>
+            <input type="float" id="Glucose" name="Glucose" min="0.00000" max="1" placeholder="Enter your Glucose level in float" required><br>
+
+            <label for="Cholesterol">Cholesterol</label>
+            <input type="float" id="Cholesterol" name="Cholesterol" min="0.0" max="1" placeholder="Enter your Cholesterol level in float" required><br>
+
+            <label for="Hemoglobin">Hemoglobin</label>
+            <input type="float" id="Hemoglobin" name="Hemoglobin" min="0.00000" max="1" placeholder="Enter your Hemoglobin level in float" required><br>
+
+            <label for="Platelets">Platelets</label>
+            <input type="float" id="Platelets" name="Platelets" min="0.00000" max="1" placeholder="Enter your Platelets level in float" required><br>
+
+            <label for="White Blood Cells">White Blood Cells</label>
+            <input type="float" id="White Blood Cells" name="White Blood Cells" min="0.00000" max="1" placeholder="Enter your White Blood Cells level in float" required><br>
+
+            <label for="Red Blood Cells">Red Blood Cells</label>
+            <input type="float" id="Red Blood Cells" name="Red Blood Cells" min="0.0000" max="1" placeholder="Enter your Red Blood Cells level in float" required><br>
+        
+            <label for="Hematocrit">Hematocrit</label>
+            <input type="float" id="Hematocrit" name="Hematocrit" min="0.00000" max="1" placeholder="Enter your Hematocrit level in float" required><br>
+
+            <label for="Mean Corpuscular Volume">Mean Corpuscular Volume</label>
+            <input type="float" id="Mean Corpuscular Volume" name="Mean Corpuscular Volume" min="0.00000" max="1" placeholder="Enter your Mean Corpuscular Volume level in float" required><br>
+
+            <label for="Mean Corpuscular Hemoglobin">Mean Corpuscular Hemoglobin</label>
+            <input type="float" id="Mean Corpuscular Hemoglobin" name="Mean Corpuscular Hemoglobin" min="0.00000" max="1" placeholder="Enter your Mean Corpuscular Hemoglobin level in float" required><br>
+
+            <label for="Mean Corpuscular Hemoglobin Concentration">Mean Corpuscular Hemoglobin Concentration</label>
+            <input type="float" id="Mean Corpuscular Hemoglobin Concentration" name="Mean Corpuscular Hemoglobin Concentration" placeholder="Enter your Mean Corpuscular Hemoglobin Concentration level in float" required><br>
+
+            <label for="Insulin">Insulin</label>
+            <input type="float" id="Insulin" name="Insulin" placeholder="Enter your Insulin level in float" required><br>
+
+            <label for="BMI">BMI</label>
+            <input type="float" id="BMI" name="BMI" placeholder="Enter your BMI level in float" required><br>
+
+            <label for="Systolic Blood Pressure">Systolic Blood Pressure</label>
+            <input type="float" id="Systolic Blood Pressure" name="Systolic Blood Pressure" placeholder="Enter your Systolic Blood Pressure level in float" required><br>
+
+            <label for="Diastolic Blood Pressure">Diastolic Blood Pressure</label>
+            <input type="float" id="Diastolic Blood Pressure" name="Diastolic Blood Pressure" placeholder="Enter your Diastolic Blood Pressure level in float" required><br>
+
+            <label for="Triglycerides">Triglycerides</label>
+            <input type="float" id="Triglycerides" name="Triglycerides" placeholder="Enter your Triglycerides level in float" required><br>
+
+            <label for="HbA1c">HbA1c</label>
+            <input type="float" id="HbA1c" name="HbA1c" placeholder="Enter your HbA1c level in float" required><br>
+
+            <label for="LDL Cholesterol">LDL Cholesterol</label>
+            <input type="float" id="LDL Cholesterol" name="LDL Cholesterol" placeholder="Enter your LDL Cholesterol level in float" required><br>
+
+            <label for="HDL Cholesterol">HDL Cholesterol</label>
+            <input type="float" id="HDL Cholesterol" name="HDL Cholesterol" placeholder="Enter your HDL Cholesterol level in float" required><br>
+
+            <label for="ALT">ALT</label>
+            <input type="float" id="ALT" name="ALT" placeholder="Enter your ALT level in float" required><br>
+
+            <label for="AST">AST</label>
+            <input type="float" id="AST" name="AST" placeholder="Enter your AST level in float" required><br>
+
+            <label for="Heart Rate">Heart Rate</label>
+            <input type="float" id="Heart Rate" name="Heart Rate" placeholder="Enter your Heart Rate level in float" required><br>
+
+            <label for="Creatinine">Creatinine</label>
+            <input type="float" id="Creatinine" name="Creatinine" placeholder="Enter your Creatinine level in float" required><br>
+
+            <label for="Troponin">Troponin</label>
+            <input type="float" id="Troponin" name="Troponin" placeholder="Enter your Troponin level in float" required><br>
+
+            <label for="C-reactive Protein">C-reactive Protein</label>
+            <input type="float" id="C-reactive Protein" name="C-reactive Protein" placeholder="Enter your C-reactive Protein level in float" required><br>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
