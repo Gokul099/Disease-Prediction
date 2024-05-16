@@ -1,0 +1,80 @@
+body {
+    background-image: url('/static/Picture1-1.png'); /* Adjust path based on deployment */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: rgb(246, 243, 243);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(168, 234, 208, 1);
+}
+
+form {
+    text-align: left;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: large;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: large;
+    background: rgb(224, 220, 228);
+    color: rgb(16, 19, 20);
+}
+
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    background-color: rgb(4, 5, 68);
+    padding: 15px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bolder;
+    color: cornsilk;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgb(10, 206, 88);
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: darkslategray;
+}
+
+label {
+    font-size: larger;
+    margin-top: 25px;
+    display: block;
+    font-weight: 100;
+    text-shadow: 2px 2px 4px rgb(230, 13, 89);
+}
