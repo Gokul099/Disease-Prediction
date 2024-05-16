@@ -140,34 +140,6 @@ y_test.shape
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, make_scorer
-rc = RandomForestClassifier()
-rc.fit(x_train,y_train)
-
-x1_pred = rc.predict(x_train)
-x1_pred
-
-y1_pred = rc.predict(x_test)
-y1_pred
-
-# Accuracy
-print(f'TR:{classification_report(x1_pred,y_train)}')
-print(f'TS:{classification_report(y1_pred,y_test)}')
-
-from sklearn.model_selection import GridSearchCV
-
-para = {'n_estimators' : [100,200,300,600],
-        'min_samples_split':  [0.1,0.2,0.3],
-        'max_depth' :   [None,1,2,3],
-        'min_samples_leaf' : [None,0.1,1,2],
-        'max_features'  :   ['sqrt','log2']
-       }
-
-model1 = RandomForestClassifier()
-Gs = GridSearchCV(model1,para,cv = 2,n_jobs = -1)
-Gs.fit(x_train,y_train)
-
-best = Gs.best_params_
-print(best)
 
 m1 = RandomForestClassifier(max_depth = None, max_features = 'sqrt', min_samples_leaf = 1, min_samples_split = 0.1,
                             n_estimators = 100, random_state = 42)
