@@ -1,4 +1,6 @@
 gunicorn
 flask
 joblib
-scikit-learn 1.4.2 
+scikit-learn
+pandas
+numpy
