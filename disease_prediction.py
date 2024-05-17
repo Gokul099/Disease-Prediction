@@ -155,6 +155,17 @@ y2
 print(f'TR:{classification_report(y_train,x2)}')
 print(f'TS:{classification_report(y_test,y2)}')
 
+from sklearn.tree import DecisionTreeClassifier
+dc = DecisionTreeClassifier()
+dc.fit(x_train,y_train)
+
+x4 = dc.predict(x_train)
+
+y4 = dc.predict(x_test)
+
+print(f'TR:{classification_report(y_train,x4)}')
+print(f'TS:{classification_report(y_test,y4)}')
+
 import joblib
 
 file = 'Disease prediction'
